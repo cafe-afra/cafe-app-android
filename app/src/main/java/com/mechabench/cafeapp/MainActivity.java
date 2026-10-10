@@ -83,6 +83,7 @@ public class MainActivity extends Activity {
             }
         });
 
+        webView.setWebChromeClient(new WebChromeClient());
         webView.loadUrl(START_URL);
 
         requestNotificationPermission();
